@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Grid } from "@chakra-ui/react";
+import Logo from "./modules/header/logo";
+import Profile from "./modules/header/profile";
+import "@aws-amplify/ui/dist/style.css";
+import Banner from "./modules/banner/banner";
+import GardenDetails from "./modules/graden-details";
+import { plant1, plant2 } from "./contants";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <Grid
+      templateColumns="repeat(6, 1fr)"
+      templateRows="1fr 1fr 3fr"
+      gap={8}
+      p={8}
+      w="99vw"
+      h="98vh"
+    >
+      <Logo />
+      <Profile />
+      <Banner />
+      <GardenDetails
+        name={plant1.name}
+        history={plant1.history}
+        curTemp={plant1.curTemp}
+        curMois={plant1.curMois}
+      />
+      <GardenDetails
+        name={plant2.name}
+        history={plant2.history}
+        curTemp={plant2.curTemp}
+        curMois={plant2.curMois}
+      />
+    </Grid>
+  );
 }
 
-export default App
+export default App;
