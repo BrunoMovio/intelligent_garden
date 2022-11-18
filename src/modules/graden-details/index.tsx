@@ -1,41 +1,57 @@
-import { Heading, HStack, VStack, Box, Text } from "@chakra-ui/react";
+import { Heading, HStack, VStack, Box, Text, Spinner } from "@chakra-ui/react";
 import { GridItem } from "@chakra-ui/react";
-import MultiLineChart, { LineChartProps } from "./line-chart";
-import GaugeChart from "react-gauge-chart";
-import TemperatureChart from "./temperature-chart";
-import MoistureChart from "./moisture-chart";
+import MultiLineChart from "./components/line-chart";
+import TemperatureChart from "./components/temperature-chart";
+import MoistureChart from "./components/moisture-chart";
+import useGardenDetails from "./garden-details.uc";
+import { PageHeading } from "../../commom/components/typography/page-heading.component";
+import useGardenParams from "./garden-params.uc";
 
-function GardenDetails(props: {
-  name: string;
-  history: LineChartProps[];
-  curTemp: number;
-  curMois: number;
-}) {
+function GardenDetails(input: { plantName: string }) {
+  const {
+    gardenData,
+    current,
+    isLoading: isLoadingDetails,
+  } = useGardenDetails(input.plantName);
+  const { gardenParams, isLoading: isLoadingParams } = useGardenParams(
+    input.plantName
+  );
+
+  if (!gardenData || !gardenParams || isLoadingDetails || isLoadingParams)
+    return <Spinner />;
+
   return (
-    <GridItem colSpan={3}>
-      <VStack textAlign="center">
-        <Heading fontSize="30px">{props.name}</Heading>
-        <HStack>
-          <Box>
-            <VStack>
-              <TemperatureChart value={props.curTemp / 100} />
-              <MoistureChart value={props.curMois / 100} />
-            </VStack>
-          </Box>
-          <Box w={"240px"}>
-            <Text textAlign={"justify"}>
-              Lorem Ipsum é simplesmente uma simulação de texto da indústria
-              tipográfica e de impressos, e vem sendo utilizado desde o século
-              XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
-              os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
-              sobreviveu não só a cinco séculos, como também ao salto para a
-              editoração eletrônica, permanecendo essencialmente inalterado.
-            </Text>
-          </Box>
-        </HStack>
-        <MultiLineChart data={props.history} />
-      </VStack>
-    </GridItem>
+    <>
+      {gardenData ? (
+        <GridItem colSpan={3}>
+          <VStack textAlign="center">
+            <Heading fontSize="30px">{gardenData.name}</Heading>
+            <HStack>
+              <Box>
+                <VStack>
+                  <TemperatureChart
+                    value={(current?.temp || 0) / 100}
+                    max={gardenParams.max_temp}
+                    min={gardenParams.min_temp}
+                  />
+                  <MoistureChart
+                    value={(current?.humid || 0) / 100}
+                    max={gardenParams.max_humid}
+                    min={gardenParams.min_humid}
+                  />
+                </VStack>
+              </Box>
+              <Box w={"240px"}>
+                <Text textAlign={"justify"}>{gardenParams.desc}</Text>
+              </Box>
+            </HStack>
+            <MultiLineChart data={gardenData.history} />
+          </VStack>
+        </GridItem>
+      ) : (
+        <PageHeading>Erro ao carregar detalhes das plantas</PageHeading>
+      )}
+    </>
   );
 }
 

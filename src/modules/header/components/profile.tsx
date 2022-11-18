@@ -1,12 +1,13 @@
-import { Box, Text, VStack, HStack, GridItem, Flex } from "@chakra-ui/react";
+import { Box, VStack, GridItem, Flex, useDisclosure } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useState } from "react";
-import { Card } from "../../commom/components/card";
-import { Button } from "../../commom/components/button";
-import { Heading } from "../../commom/components/heading";
+import { Card } from "../../../commom/components/card";
+import { Heading } from "../../../commom/components/heading";
+import SelectPlantModal from "./select-plant.modal";
 
 function Profile() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <GridItem colSpan={1} w={"100$"} h={"100%"} position="relative">
@@ -17,12 +18,12 @@ function Profile() {
         h={"60px"}
         w={"90%"}
         mt={"50px"}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsProfileOpen(!isProfileOpen)}
       >
         <AiOutlineMenu size={"md"} color="#F6F7FC" />
       </Flex>
 
-      {isOpen && (
+      {isProfileOpen && (
         <Box position="absolute" bottom={"-60px"}>
           <Flex
             justify={"center"}
@@ -49,8 +50,12 @@ function Profile() {
                     fontSize={"lg"}
                     color={"gray"}
                     w={"100%"}
+                    onClick={() => {
+                      setIsModalOpen(true);
+                      setIsProfileOpen(false);
+                    }}
                   >
-                    Mudar senha
+                    Mudar plantas
                   </Heading>
                   <Heading
                     textAlign={"end"}
@@ -66,6 +71,14 @@ function Profile() {
             </VStack>
           </Flex>
         </Box>
+      )}
+      {isModalOpen ? (
+        <SelectPlantModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      ) : (
+        <></>
       )}
     </GridItem>
   );

@@ -10,12 +10,20 @@ import {
 } from "recharts";
 
 export interface LineChartProps {
-  name: string;
-  temperatura: number;
-  umidade: number;
+  time: string;
+  temp: number;
+  humid: number;
 }
 
 function MultiLineChart(props: { data: LineChartProps[] }) {
+  const mappedHistory = props.data.map((data) => {
+    return {
+      name: data.time,
+      temperatura: data.temp,
+      umidade: data.humid,
+    };
+  });
+
   return (
     <Box>
       <Text>Últimas 10 horas</Text>
@@ -23,7 +31,7 @@ function MultiLineChart(props: { data: LineChartProps[] }) {
       <LineChart
         width={600}
         height={300}
-        data={props.data}
+        data={mappedHistory}
         margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
       >
         <Line
