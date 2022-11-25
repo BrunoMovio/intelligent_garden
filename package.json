@@ -2,25 +2,24 @@
   "name": "lab-embarcados",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "yarn populate-db && vite",
+    "populate-db": "node src/populate-db.mjs > db.json",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aws-amplify/api": "^4.0.61",
-    "@aws-amplify/pubsub": "^4.5.11",
     "@types/json-server": "^0.14.4",
-    "aws-amplify": "^4.3.43",
     "axios": "^1.1.3",
     "chakra-ui": "^0.3.9",
+    "dayjs": "^1.11.6",
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-gauge-chart": "^0.4.0",
     "react-icons": "^4.6.0",
-    "recharts": "^2.1.16"
+    "recharts": "^2.1.16",
+    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
     "@chakra-ui/icons": "^1.0.15",
