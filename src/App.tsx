@@ -1,5 +1,4 @@
 import { Grid, Heading } from "@chakra-ui/react";
-import "@aws-amplify/ui/dist/style.css";
 import Banner from "./modules/banner/banner";
 import GardenDetails from "./modules/graden-details";
 import { plant1, plant2 } from "./contants";

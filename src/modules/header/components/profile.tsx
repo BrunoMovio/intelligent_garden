@@ -12,6 +12,7 @@ function Profile() {
   return (
     <GridItem colSpan={1} w={"100$"} h={"100%"} position="relative">
       <Flex
+        cursor={'pointer'}
         justify={"center"}
         align={"center"}
         py="2.5px"
@@ -24,9 +25,9 @@ function Profile() {
       </Flex>
 
       {isProfileOpen && (
-        <Box position="absolute" bottom={"-60px"}>
+        <Box position="absolute" bottom={"-80px"} right={"100px"}>
           <Flex
-            justify={"center"}
+            justify={"start"}
             align={"center"}
             py="2.5px"
             h={"80px"}
@@ -37,7 +38,7 @@ function Profile() {
           >
             <VStack>
               <Card
-                w={"100%"}
+                w={"150%"}
                 py={1}
                 zIndex={1}
                 border={"1px solid"}
@@ -45,7 +46,8 @@ function Profile() {
               >
                 <VStack p={8}>
                   <Heading
-                    textAlign={"end"}
+                    cursor={'pointer'}
+                    textAlign={"start"}
                     backgroundColor={"white"}
                     fontSize={"lg"}
                     color={"gray"}
@@ -58,7 +60,7 @@ function Profile() {
                     Mudar plantas
                   </Heading>
                   <Heading
-                    textAlign={"end"}
+                    textAlign={"start"}
                     backgroundColor={"white"}
                     fontSize={"lg"}
                     color={"gray"}
