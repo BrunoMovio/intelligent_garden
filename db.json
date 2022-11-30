@@ -1,1 +1,1289 @@
-{"user":{"name":"Artur","plants":["Tomate","Manjericão"]},"data":[{"id":"plant1","name":"Tomate","history":[{"time":1669795719,"temp":21.06,"humid":79.81},{"time":1669796019,"temp":28.25,"humid":84.69},{"time":1669796319,"temp":23.8,"humid":75.76},{"time":1669796619,"temp":29.55,"humid":67.89},{"time":1669796919,"temp":21.94,"humid":87.59},{"time":1669797219,"temp":22.43,"humid":81.1},{"time":1669797519,"temp":29.07,"humid":70.94},{"time":1669797819,"temp":24.42,"humid":88.27},{"time":1669798119,"temp":29.87,"humid":86.63},{"time":1669798419,"temp":24.99,"humid":89.78},{"time":1669798719,"temp":21.91,"humid":86.89},{"time":1669799019,"temp":29.02,"humid":75.16},{"time":1669799319,"temp":21.22,"humid":82.89},{"time":1669799619,"temp":25.32,"humid":87.66},{"time":1669799919,"temp":21.14,"humid":80.27},{"time":1669800219,"temp":21.45,"humid":74.8},{"time":1669800519,"temp":21.82,"humid":77.29},{"time":1669800819,"temp":21.38,"humid":71.72},{"time":1669801119,"temp":27.59,"humid":70.11},{"time":1669801419,"temp":25.63,"humid":86.15},{"time":1669801719,"temp":27.09,"humid":89.78},{"time":1669802019,"temp":29.36,"humid":78.81},{"time":1669802319,"temp":21.51,"humid":65.98},{"time":1669802619,"temp":23.61,"humid":82.45},{"time":1669802919,"temp":21.05,"humid":81.93},{"time":1669803219,"temp":21.03,"humid":73.86},{"time":1669803519,"temp":23.62,"humid":65.26},{"time":1669803819,"temp":21.46,"humid":76.4},{"time":1669804119,"temp":22.8,"humid":69.57},{"time":1669804419,"temp":26.79,"humid":84.95},{"time":1669804719,"temp":29.38,"humid":84.14},{"time":1669805019,"temp":25.17,"humid":81.36},{"time":1669805319,"temp":29.3,"humid":71.41},{"time":1669805619,"temp":22.9,"humid":73.18},{"time":1669805919,"temp":21.53,"humid":88.92},{"time":1669806219,"temp":22.53,"humid":77.99},{"time":1669806519,"temp":23.67,"humid":83.35},{"time":1669806819,"temp":24.09,"humid":74.53},{"time":1669807119,"temp":26.07,"humid":66.07},{"time":1669807419,"temp":29.44,"humid":72.15},{"time":1669807719,"temp":25.98,"humid":77.66},{"time":1669808019,"temp":26.36,"humid":77.95},{"time":1669808319,"temp":27.53,"humid":70.97},{"time":1669808619,"temp":26.75,"humid":75.05},{"time":1669808919,"temp":22.53,"humid":73.55},{"time":1669809219,"temp":24.66,"humid":83.17},{"time":1669809519,"temp":23.26,"humid":72.17},{"time":1669809819,"temp":25.53,"humid":83.7},{"time":1669810119,"temp":22.1,"humid":68.39},{"time":1669810419,"temp":23.34,"humid":81.38},{"time":1669810719,"temp":28.58,"humid":89.45},{"time":1669811019,"temp":28.02,"humid":83.46},{"time":1669811319,"temp":26.69,"humid":87.59},{"time":1669811619,"temp":25.57,"humid":67.6},{"time":1669811919,"temp":21.61,"humid":65.14},{"time":1669812219,"temp":24.45,"humid":77.43},{"time":1669812519,"temp":23.73,"humid":76.79},{"time":1669812819,"temp":22.43,"humid":76.88},{"time":1669813119,"temp":25.46,"humid":72.14},{"time":1669813419,"temp":21.19,"humid":69.8},{"time":1669813719,"temp":22,"humid":72.37},{"time":1669814019,"temp":23.87,"humid":82.59},{"time":1669814319,"temp":29.76,"humid":85.07},{"time":1669814619,"temp":23.08,"humid":84.63},{"time":1669814919,"temp":26.04,"humid":67.45},{"time":1669815219,"temp":28.96,"humid":88.34},{"time":1669815519,"temp":21.81,"humid":76.79},{"time":1669815819,"temp":28.44,"humid":72.98},{"time":1669816119,"temp":28.27,"humid":88.94},{"time":1669816419,"temp":27.31,"humid":81.01},{"time":1669816719,"temp":25.73,"humid":74.66},{"time":1669817019,"temp":28.3,"humid":67.17},{"time":1669817319,"temp":26.24,"humid":82.01},{"time":1669817619,"temp":27.8,"humid":73.97},{"time":1669817919,"temp":21.2,"humid":74.8},{"time":1669818219,"temp":21.95,"humid":67.44},{"time":1669818519,"temp":26.57,"humid":70.52},{"time":1669818819,"temp":26.5,"humid":66.67},{"time":1669819119,"temp":29.41,"humid":68.15},{"time":1669819419,"temp":24.69,"humid":82.38},{"time":1669819719,"temp":29.83,"humid":73.38},{"time":1669820019,"temp":24.9,"humid":77.45},{"time":1669820319,"temp":21.75,"humid":83.77},{"time":1669820619,"temp":26.39,"humid":71.45},{"time":1669820919,"temp":26.38,"humid":86.34},{"time":1669821219,"temp":22,"humid":67.73},{"time":1669821519,"temp":23.06,"humid":72.5},{"time":1669821819,"temp":23.7,"humid":69.01},{"time":1669822119,"temp":29.45,"humid":83.59},{"time":1669822419,"temp":23,"humid":84.63},{"time":1669822719,"temp":29.47,"humid":79.29},{"time":1669823019,"temp":22.06,"humid":65.52},{"time":1669823319,"temp":22.7,"humid":69.84},{"time":1669823619,"temp":22.02,"humid":78.29},{"time":1669823919,"temp":27.93,"humid":78.06},{"time":1669824219,"temp":24.38,"humid":70.57},{"time":1669824519,"temp":27.79,"humid":74.18},{"time":1669824819,"temp":26.91,"humid":66.33},{"time":1669825119,"temp":21.25,"humid":75.88},{"time":1669825419,"temp":28.38,"humid":75.28},{"time":1669825719,"temp":28.17,"humid":65.85},{"time":1669826019,"temp":28.65,"humid":83.1},{"time":1669826319,"temp":22.76,"humid":72.29},{"time":1669826619,"temp":22.12,"humid":75.85},{"time":1669826919,"temp":28.85,"humid":69.76},{"time":1669827219,"temp":28.02,"humid":69},{"time":1669827519,"temp":29.6,"humid":70.73},{"time":1669827819,"temp":23.11,"humid":85.71},{"time":1669828119,"temp":21.4,"humid":88.56},{"time":1669828419,"temp":28.28,"humid":89.71},{"time":1669828719,"temp":27.12,"humid":73.12},{"time":1669829019,"temp":21.64,"humid":69.21},{"time":1669829319,"temp":23.3,"humid":74.68},{"time":1669829619,"temp":27.64,"humid":77.81},{"time":1669829919,"temp":24.08,"humid":85.99},{"time":1669830219,"temp":22.87,"humid":73.87},{"time":1669830519,"temp":29.64,"humid":78.04},{"time":1669830819,"temp":29.5,"humid":71.91},{"time":1669831119,"temp":27.52,"humid":85.44},{"time":1669831419,"temp":27.56,"humid":80.87}]},{"id":"plant2","name":"Manjericão","history":[{"time":1669795719,"temp":16.44,"humid":64.48},{"time":1669796019,"temp":14.84,"humid":60.48},{"time":1669796319,"temp":10.33,"humid":65.17},{"time":1669796619,"temp":25.56,"humid":84.94},{"time":1669796919,"temp":24.41,"humid":80.1},{"time":1669797219,"temp":12.41,"humid":66.8},{"time":1669797519,"temp":31.7,"humid":89.7},{"time":1669797819,"temp":26.06,"humid":67.17},{"time":1669798119,"temp":23.87,"humid":60.91},{"time":1669798419,"temp":16.36,"humid":75.35},{"time":1669798719,"temp":17.37,"humid":67.78},{"time":1669799019,"temp":31.64,"humid":65.85},{"time":1669799319,"temp":24.44,"humid":63.73},{"time":1669799619,"temp":22.02,"humid":78.09},{"time":1669799919,"temp":11.26,"humid":78.94},{"time":1669800219,"temp":24.45,"humid":78.25},{"time":1669800519,"temp":29.5,"humid":73.8},{"time":1669800819,"temp":23.19,"humid":76.86},{"time":1669801119,"temp":24.6,"humid":81.85},{"time":1669801419,"temp":16.95,"humid":67.8},{"time":1669801719,"temp":17.02,"humid":84.46},{"time":1669802019,"temp":17.19,"humid":80.49},{"time":1669802319,"temp":17.74,"humid":73.64},{"time":1669802619,"temp":17.39,"humid":74.6},{"time":1669802919,"temp":28.85,"humid":81.89},{"time":1669803219,"temp":27.62,"humid":71.85},{"time":1669803519,"temp":15.95,"humid":73.44},{"time":1669803819,"temp":26.63,"humid":69.95},{"time":1669804119,"temp":21.78,"humid":64.56},{"time":1669804419,"temp":30.75,"humid":80.91},{"time":1669804719,"temp":25.22,"humid":84.4},{"time":1669805019,"temp":23.47,"humid":69.06},{"time":1669805319,"temp":15.28,"humid":60.85},{"time":1669805619,"temp":16.78,"humid":83.39},{"time":1669805919,"temp":18.81,"humid":71.96},{"time":1669806219,"temp":22.28,"humid":74.47},{"time":1669806519,"temp":19.14,"humid":88.54},{"time":1669806819,"temp":24,"humid":66.15},{"time":1669807119,"temp":10.08,"humid":72.37},{"time":1669807419,"temp":21.68,"humid":87.88},{"time":1669807719,"temp":17.84,"humid":60.54},{"time":1669808019,"temp":31.56,"humid":60.98},{"time":1669808319,"temp":25.8,"humid":64.71},{"time":1669808619,"temp":18.11,"humid":71.7},{"time":1669808919,"temp":11.85,"humid":75.31},{"time":1669809219,"temp":24.84,"humid":72.22},{"time":1669809519,"temp":25.59,"humid":66.21},{"time":1669809819,"temp":20.49,"humid":84.71},{"time":1669810119,"temp":16.21,"humid":68.91},{"time":1669810419,"temp":26.06,"humid":62.26},{"time":1669810719,"temp":14.6,"humid":83.61},{"time":1669811019,"temp":30.58,"humid":71.3},{"time":1669811319,"temp":30.71,"humid":63.5},{"time":1669811619,"temp":17.35,"humid":78.33},{"time":1669811919,"temp":13.61,"humid":76.06},{"time":1669812219,"temp":17.96,"humid":61.55},{"time":1669812519,"temp":16.61,"humid":68.16},{"time":1669812819,"temp":23.19,"humid":61.87},{"time":1669813119,"temp":29.85,"humid":66.29},{"time":1669813419,"temp":30.37,"humid":72.87},{"time":1669813719,"temp":11.97,"humid":80.02},{"time":1669814019,"temp":23.29,"humid":71.27},{"time":1669814319,"temp":10.66,"humid":71.92},{"time":1669814619,"temp":12.8,"humid":69.5},{"time":1669814919,"temp":28.85,"humid":80.8},{"time":1669815219,"temp":14.35,"humid":86.82},{"time":1669815519,"temp":13.76,"humid":85.99},{"time":1669815819,"temp":13.72,"humid":74.01},{"time":1669816119,"temp":26.4,"humid":87.75},{"time":1669816419,"temp":20.71,"humid":78.08},{"time":1669816719,"temp":23.73,"humid":86.21},{"time":1669817019,"temp":13.74,"humid":65.49},{"time":1669817319,"temp":11.43,"humid":85.08},{"time":1669817619,"temp":15.8,"humid":81.75},{"time":1669817919,"temp":21.46,"humid":69.96},{"time":1669818219,"temp":18.18,"humid":68.59},{"time":1669818519,"temp":23.72,"humid":74.82},{"time":1669818819,"temp":29.84,"humid":72.62},{"time":1669819119,"temp":14.14,"humid":72.47},{"time":1669819419,"temp":11.54,"humid":68.07},{"time":1669819719,"temp":25.53,"humid":85.43},{"time":1669820019,"temp":28.84,"humid":78.38},{"time":1669820319,"temp":17.12,"humid":76.28},{"time":1669820619,"temp":25.65,"humid":65.41},{"time":1669820919,"temp":13.67,"humid":73.5},{"time":1669821219,"temp":30.33,"humid":74.82},{"time":1669821519,"temp":13.82,"humid":66.33},{"time":1669821819,"temp":12.64,"humid":65.77},{"time":1669822119,"temp":30.59,"humid":88.07},{"time":1669822419,"temp":17.74,"humid":76.28},{"time":1669822719,"temp":21.34,"humid":60.52},{"time":1669823019,"temp":21.32,"humid":78.88},{"time":1669823319,"temp":13.64,"humid":85.05},{"time":1669823619,"temp":23.09,"humid":69.96},{"time":1669823919,"temp":26.43,"humid":74.11},{"time":1669824219,"temp":30.84,"humid":78.52},{"time":1669824519,"temp":21.21,"humid":63.26},{"time":1669824819,"temp":19.32,"humid":79.26},{"time":1669825119,"temp":11.77,"humid":67.06},{"time":1669825419,"temp":14.42,"humid":74.71},{"time":1669825719,"temp":18.95,"humid":60.81},{"time":1669826019,"temp":27.41,"humid":60.81},{"time":1669826319,"temp":21.32,"humid":61.87},{"time":1669826619,"temp":13,"humid":73.34},{"time":1669826919,"temp":24.19,"humid":71.15},{"time":1669827219,"temp":28.89,"humid":88.34},{"time":1669827519,"temp":29.57,"humid":67.91},{"time":1669827819,"temp":24.87,"humid":62.63},{"time":1669828119,"temp":13.34,"humid":88.59},{"time":1669828419,"temp":30.14,"humid":73.95},{"time":1669828719,"temp":26.59,"humid":73.69},{"time":1669829019,"temp":30.12,"humid":81.79},{"time":1669829319,"temp":31.03,"humid":68.22},{"time":1669829619,"temp":27.76,"humid":75.06},{"time":1669829919,"temp":14.9,"humid":86.05},{"time":1669830219,"temp":31.68,"humid":61.13},{"time":1669830519,"temp":19.86,"humid":72.57},{"time":1669830819,"temp":28.91,"humid":66.82},{"time":1669831119,"temp":16.96,"humid":78.75},{"time":1669831419,"temp":15.64,"humid":69.48}]}],"params":[{"plant":"Tomate","min_temp":21,"max_temp":30,"min_humid":65,"max_humid":90,"desc":"O tomate-cereja adora ambientes ensolarados. Eles precisam de um clima livre de geadas e pelo menos seis horas de sol por dia. Deixá-los em um local, abrigado e bem ventilado reduz o risco de fungo nas folhas."},{"plant":"Manjericão","min_temp":10,"max_temp":32,"min_humid":60,"max_humid":90,"desc":"O local para plantio deve receber pelo menos quatro horas diárias de sol, pois o manjericão se dá muito bem com esta luz natural. Regas não são necessárias diariamente, pois o excesso de água pode encerrar a vida de nosso querido manjericão. Sendo assim, devem ser efetuadas a cada dois ou três dias, ou então, quando a terra da parte superior estiver seca."},{"plant":"Tomilho","min_temp":20,"max_temp":30,"min_humid":40,"max_humid":60,"desc":"Mantenha o vaso em local ensolarado e fresco. Regue a planta sempre que notar a terra seca, com mais frequência nas primeiras semanas após o plantio, mas tomando cuidado para evitar o encharcamento, já que o tomilho prefere solo seco."},{"plant":"Coentro","min_temp":10,"max_temp":30,"min_humid":50,"max_humid":90,"desc":"Você sempre deverá checar o solo antes de regar o coentro. O ideal é que a terra nunca fique úmida ou encharcada demais. Ofereça água sempre que perceber a terra seca. Quando as plantas estiverem bem desenvolvidas, diminua a frequência de rega."},{"plant":"Hortelã","min_temp":13,"max_temp":30,"min_humid":90,"max_humid":100,"desc":"Após o plantio, molhe à terra para que a umidade chegue às raízes da hortelã. À terra deve sempre permanecer úmida, mas não encharcada. Se o clima estiver quente, você pode regar a planta várias vezes por dia. Deixe o vaso voltado para o leste, pois a hortelã se desenvolve melhor com seis ou mais horas de luz solar."},{"plant":"Alface","min_temp":15,"max_temp":26,"min_humid":50,"max_humid":70,"desc":"Coloque sua alface em um local arejado: a circulação de ar favorece o crescimento e plantio das alfaces. Então lugares que pegam bastante vento são ideais para que essa hortaliça cresça com qualidade. Regue em dias alternados: é imprescindível que a terra esteja bem úmida, mas nunca encharcada."},{"plant":"Alecrim","min_temp":20,"max_temp":30,"min_humid":45,"max_humid":60,"desc":"O alecrim se adapta a qualquer tipo de solo, mas prefere os secos, arenosos e bem drenados. Quanto a localização, é muito importante lembrar que para o cultivo ocorrer de forma correta, o local em que ele será plantado deve receber luz solar de uma forma que o atinja diretamente, por, pelo menos, 5 horas diárias."},{"plant":"Salsa","min_temp":10,"max_temp":24,"min_humid":70,"max_humid":95,"desc":"Gosta de solos com textura areno-argilosa, rico em matéria orgânica, bem drenados e ligeiramente ácidos, com pH 5,5-6,7. A salsa precisa de quatro horas de sol por dia, pelo menos, e você deve deixar a terra sempre úmida, fazendo regas diárias. Para colher, é só cortar o galho inteiro, deixando um dedo do solo."}]}
+{
+    "user": {
+        "name": "Artur",
+        "plants": [
+            "Tomate",
+            "Manjericão"
+        ]
+    },
+    "data": [
+        {
+            "id": "plant1",
+            "name": "Tomate",
+            "history": [
+                {
+                    "time": 1669795863,
+                    "temp": 26.98,
+                    "humid": 69.45
+                },
+                {
+                    "time": 1669796163,
+                    "temp": 29.64,
+                    "humid": 71.65
+                },
+                {
+                    "time": 1669796463,
+                    "temp": 26.2,
+                    "humid": 84.86
+                },
+                {
+                    "time": 1669796763,
+                    "temp": 28.8,
+                    "humid": 69.5
+                },
+                {
+                    "time": 1669797063,
+                    "temp": 29.76,
+                    "humid": 79.21
+                },
+                {
+                    "time": 1669797363,
+                    "temp": 25.85,
+                    "humid": 67.1
+                },
+                {
+                    "time": 1669797663,
+                    "temp": 28.09,
+                    "humid": 86.07
+                },
+                {
+                    "time": 1669797963,
+                    "temp": 22.51,
+                    "humid": 73.08
+                },
+                {
+                    "time": 1669798263,
+                    "temp": 27.12,
+                    "humid": 79.06
+                },
+                {
+                    "time": 1669798563,
+                    "temp": 26.89,
+                    "humid": 84.22
+                },
+                {
+                    "time": 1669798863,
+                    "temp": 27.64,
+                    "humid": 77.21
+                },
+                {
+                    "time": 1669799163,
+                    "temp": 28.64,
+                    "humid": 83.41
+                },
+                {
+                    "time": 1669799463,
+                    "temp": 26.46,
+                    "humid": 77.15
+                },
+                {
+                    "time": 1669799763,
+                    "temp": 25.27,
+                    "humid": 70.21
+                },
+                {
+                    "time": 1669800063,
+                    "temp": 22.71,
+                    "humid": 75.85
+                },
+                {
+                    "time": 1669800363,
+                    "temp": 26.2,
+                    "humid": 75.77
+                },
+                {
+                    "time": 1669800663,
+                    "temp": 21.82,
+                    "humid": 70.61
+                },
+                {
+                    "time": 1669800963,
+                    "temp": 23.28,
+                    "humid": 80.18
+                },
+                {
+                    "time": 1669801263,
+                    "temp": 21.9,
+                    "humid": 78.83
+                },
+                {
+                    "time": 1669801563,
+                    "temp": 25.09,
+                    "humid": 84.59
+                },
+                {
+                    "time": 1669801863,
+                    "temp": 28.39,
+                    "humid": 86.08
+                },
+                {
+                    "time": 1669802163,
+                    "temp": 27.67,
+                    "humid": 84.35
+                },
+                {
+                    "time": 1669802463,
+                    "temp": 23.89,
+                    "humid": 88.07
+                },
+                {
+                    "time": 1669802763,
+                    "temp": 25.13,
+                    "humid": 72.48
+                },
+                {
+                    "time": 1669803063,
+                    "temp": 25.47,
+                    "humid": 77.56
+                },
+                {
+                    "time": 1669803363,
+                    "temp": 29.69,
+                    "humid": 82.82
+                },
+                {
+                    "time": 1669803663,
+                    "temp": 29.75,
+                    "humid": 73.04
+                },
+                {
+                    "time": 1669803963,
+                    "temp": 22.73,
+                    "humid": 77.52
+                },
+                {
+                    "time": 1669804263,
+                    "temp": 23.24,
+                    "humid": 85.13
+                },
+                {
+                    "time": 1669804563,
+                    "temp": 22.16,
+                    "humid": 79.01
+                },
+                {
+                    "time": 1669804863,
+                    "temp": 23.37,
+                    "humid": 81.07
+                },
+                {
+                    "time": 1669805163,
+                    "temp": 24.93,
+                    "humid": 80.56
+                },
+                {
+                    "time": 1669805463,
+                    "temp": 21.85,
+                    "humid": 84.45
+                },
+                {
+                    "time": 1669805763,
+                    "temp": 24.51,
+                    "humid": 79.76
+                },
+                {
+                    "time": 1669806063,
+                    "temp": 28.72,
+                    "humid": 66.38
+                },
+                {
+                    "time": 1669806363,
+                    "temp": 22.92,
+                    "humid": 88.2
+                },
+                {
+                    "time": 1669806663,
+                    "temp": 21.53,
+                    "humid": 80.93
+                },
+                {
+                    "time": 1669806963,
+                    "temp": 26.96,
+                    "humid": 77.43
+                },
+                {
+                    "time": 1669807263,
+                    "temp": 22.5,
+                    "humid": 75.62
+                },
+                {
+                    "time": 1669807563,
+                    "temp": 24.97,
+                    "humid": 68.01
+                },
+                {
+                    "time": 1669807863,
+                    "temp": 29.09,
+                    "humid": 74.55
+                },
+                {
+                    "time": 1669808163,
+                    "temp": 21.59,
+                    "humid": 88.86
+                },
+                {
+                    "time": 1669808463,
+                    "temp": 25.24,
+                    "humid": 86.07
+                },
+                {
+                    "time": 1669808763,
+                    "temp": 28.18,
+                    "humid": 86.92
+                },
+                {
+                    "time": 1669809063,
+                    "temp": 28.44,
+                    "humid": 73.17
+                },
+                {
+                    "time": 1669809363,
+                    "temp": 28.24,
+                    "humid": 89.93
+                },
+                {
+                    "time": 1669809663,
+                    "temp": 26.41,
+                    "humid": 81.87
+                },
+                {
+                    "time": 1669809963,
+                    "temp": 25.95,
+                    "humid": 89.38
+                },
+                {
+                    "time": 1669810263,
+                    "temp": 28.85,
+                    "humid": 80.16
+                },
+                {
+                    "time": 1669810563,
+                    "temp": 27.48,
+                    "humid": 82.14
+                },
+                {
+                    "time": 1669810863,
+                    "temp": 23.11,
+                    "humid": 67.09
+                },
+                {
+                    "time": 1669811163,
+                    "temp": 29.75,
+                    "humid": 89.6
+                },
+                {
+                    "time": 1669811463,
+                    "temp": 26.68,
+                    "humid": 81.97
+                },
+                {
+                    "time": 1669811763,
+                    "temp": 22.56,
+                    "humid": 76.57
+                },
+                {
+                    "time": 1669812063,
+                    "temp": 25.07,
+                    "humid": 65.44
+                },
+                {
+                    "time": 1669812363,
+                    "temp": 28.8,
+                    "humid": 84.97
+                },
+                {
+                    "time": 1669812663,
+                    "temp": 27.12,
+                    "humid": 69.9
+                },
+                {
+                    "time": 1669812963,
+                    "temp": 28.53,
+                    "humid": 65.62
+                },
+                {
+                    "time": 1669813263,
+                    "temp": 27.06,
+                    "humid": 88.3
+                },
+                {
+                    "time": 1669813563,
+                    "temp": 26.01,
+                    "humid": 65.62
+                },
+                {
+                    "time": 1669813863,
+                    "temp": 28.33,
+                    "humid": 88.2
+                },
+                {
+                    "time": 1669814163,
+                    "temp": 21.04,
+                    "humid": 73.61
+                },
+                {
+                    "time": 1669814463,
+                    "temp": 27.39,
+                    "humid": 78.65
+                },
+                {
+                    "time": 1669814763,
+                    "temp": 27.72,
+                    "humid": 75.63
+                },
+                {
+                    "time": 1669815063,
+                    "temp": 26.87,
+                    "humid": 76.37
+                },
+                {
+                    "time": 1669815363,
+                    "temp": 23.31,
+                    "humid": 79.33
+                },
+                {
+                    "time": 1669815663,
+                    "temp": 22.67,
+                    "humid": 65.72
+                },
+                {
+                    "time": 1669815963,
+                    "temp": 25.84,
+                    "humid": 84.76
+                },
+                {
+                    "time": 1669816263,
+                    "temp": 26.83,
+                    "humid": 89.9
+                },
+                {
+                    "time": 1669816563,
+                    "temp": 28.41,
+                    "humid": 87.03
+                },
+                {
+                    "time": 1669816863,
+                    "temp": 26.7,
+                    "humid": 89.41
+                },
+                {
+                    "time": 1669817163,
+                    "temp": 28.52,
+                    "humid": 68.35
+                },
+                {
+                    "time": 1669817463,
+                    "temp": 29.59,
+                    "humid": 89.58
+                },
+                {
+                    "time": 1669817763,
+                    "temp": 25.14,
+                    "humid": 67.97
+                },
+                {
+                    "time": 1669818063,
+                    "temp": 21.76,
+                    "humid": 74.65
+                },
+                {
+                    "time": 1669818363,
+                    "temp": 28.03,
+                    "humid": 81.68
+                },
+                {
+                    "time": 1669818663,
+                    "temp": 26.76,
+                    "humid": 76.47
+                },
+                {
+                    "time": 1669818963,
+                    "temp": 22.43,
+                    "humid": 80.98
+                },
+                {
+                    "time": 1669819263,
+                    "temp": 29.86,
+                    "humid": 72.63
+                },
+                {
+                    "time": 1669819563,
+                    "temp": 23.9,
+                    "humid": 85.79
+                },
+                {
+                    "time": 1669819863,
+                    "temp": 28.2,
+                    "humid": 85.38
+                },
+                {
+                    "time": 1669820163,
+                    "temp": 23.55,
+                    "humid": 79
+                },
+                {
+                    "time": 1669820463,
+                    "temp": 22.99,
+                    "humid": 84.73
+                },
+                {
+                    "time": 1669820763,
+                    "temp": 22.64,
+                    "humid": 81.27
+                },
+                {
+                    "time": 1669821063,
+                    "temp": 22.69,
+                    "humid": 75.53
+                },
+                {
+                    "time": 1669821363,
+                    "temp": 27.06,
+                    "humid": 80.68
+                },
+                {
+                    "time": 1669821663,
+                    "temp": 25.15,
+                    "humid": 85.76
+                },
+                {
+                    "time": 1669821963,
+                    "temp": 25.17,
+                    "humid": 70.95
+                },
+                {
+                    "time": 1669822263,
+                    "temp": 24.52,
+                    "humid": 67.61
+                },
+                {
+                    "time": 1669822563,
+                    "temp": 25.46,
+                    "humid": 67.23
+                },
+                {
+                    "time": 1669822863,
+                    "temp": 23.81,
+                    "humid": 85.65
+                },
+                {
+                    "time": 1669823163,
+                    "temp": 21.63,
+                    "humid": 84.4
+                },
+                {
+                    "time": 1669823463,
+                    "temp": 23.02,
+                    "humid": 69.66
+                },
+                {
+                    "time": 1669823763,
+                    "temp": 27.23,
+                    "humid": 88.08
+                },
+                {
+                    "time": 1669824063,
+                    "temp": 25.92,
+                    "humid": 81.92
+                },
+                {
+                    "time": 1669824363,
+                    "temp": 21.35,
+                    "humid": 75.62
+                },
+                {
+                    "time": 1669824663,
+                    "temp": 27.2,
+                    "humid": 84.61
+                },
+                {
+                    "time": 1669824963,
+                    "temp": 24.22,
+                    "humid": 70.83
+                },
+                {
+                    "time": 1669825263,
+                    "temp": 24.22,
+                    "humid": 71.03
+                },
+                {
+                    "time": 1669825563,
+                    "temp": 24.79,
+                    "humid": 77.7
+                },
+                {
+                    "time": 1669825863,
+                    "temp": 26.51,
+                    "humid": 74.27
+                },
+                {
+                    "time": 1669826163,
+                    "temp": 24.06,
+                    "humid": 70.46
+                },
+                {
+                    "time": 1669826463,
+                    "temp": 28.36,
+                    "humid": 70.93
+                },
+                {
+                    "time": 1669826763,
+                    "temp": 27.16,
+                    "humid": 86.71
+                },
+                {
+                    "time": 1669827063,
+                    "temp": 29.03,
+                    "humid": 85.49
+                },
+                {
+                    "time": 1669827363,
+                    "temp": 21.55,
+                    "humid": 85.64
+                },
+                {
+                    "time": 1669827663,
+                    "temp": 28.87,
+                    "humid": 83.16
+                },
+                {
+                    "time": 1669827963,
+                    "temp": 26.65,
+                    "humid": 69.13
+                },
+                {
+                    "time": 1669828263,
+                    "temp": 27.1,
+                    "humid": 82.68
+                },
+                {
+                    "time": 1669828563,
+                    "temp": 28.53,
+                    "humid": 71.2
+                },
+                {
+                    "time": 1669828863,
+                    "temp": 25.49,
+                    "humid": 83.66
+                },
+                {
+                    "time": 1669829163,
+                    "temp": 23.38,
+                    "humid": 68.43
+                },
+                {
+                    "time": 1669829463,
+                    "temp": 23.23,
+                    "humid": 89.91
+                },
+                {
+                    "time": 1669829763,
+                    "temp": 24.81,
+                    "humid": 82.95
+                },
+                {
+                    "time": 1669830063,
+                    "temp": 22.06,
+                    "humid": 79.16
+                },
+                {
+                    "time": 1669830363,
+                    "temp": 28.86,
+                    "humid": 71.17
+                },
+                {
+                    "time": 1669830663,
+                    "temp": 24.57,
+                    "humid": 77.76
+                },
+                {
+                    "time": 1669830963,
+                    "temp": 27.33,
+                    "humid": 67.35
+                },
+                {
+                    "time": 1669831263,
+                    "temp": 25.71,
+                    "humid": 76
+                },
+                {
+                    "time": 1669831563,
+                    "temp": 26.64,
+                    "humid": 76.55
+                }
+            ]
+        },
+        {
+            "id": "plant2",
+            "name": "Manjericão",
+            "history": [
+                {
+                    "time": 1669795863,
+                    "temp": 28.7,
+                    "humid": 74.27
+                },
+                {
+                    "time": 1669796163,
+                    "temp": 19.43,
+                    "humid": 60.92
+                },
+                {
+                    "time": 1669796463,
+                    "temp": 22.1,
+                    "humid": 85.48
+                },
+                {
+                    "time": 1669796763,
+                    "temp": 18.78,
+                    "humid": 73.78
+                },
+                {
+                    "time": 1669797063,
+                    "temp": 24.13,
+                    "humid": 75.29
+                },
+                {
+                    "time": 1669797363,
+                    "temp": 16.4,
+                    "humid": 71.58
+                },
+                {
+                    "time": 1669797663,
+                    "temp": 21.51,
+                    "humid": 88.2
+                },
+                {
+                    "time": 1669797963,
+                    "temp": 28.89,
+                    "humid": 61.33
+                },
+                {
+                    "time": 1669798263,
+                    "temp": 17.94,
+                    "humid": 69.4
+                },
+                {
+                    "time": 1669798563,
+                    "temp": 12.91,
+                    "humid": 70.87
+                },
+                {
+                    "time": 1669798863,
+                    "temp": 25.45,
+                    "humid": 83.58
+                },
+                {
+                    "time": 1669799163,
+                    "temp": 23.44,
+                    "humid": 89.26
+                },
+                {
+                    "time": 1669799463,
+                    "temp": 14.74,
+                    "humid": 85.15
+                },
+                {
+                    "time": 1669799763,
+                    "temp": 13.67,
+                    "humid": 87.15
+                },
+                {
+                    "time": 1669800063,
+                    "temp": 17.55,
+                    "humid": 72.79
+                },
+                {
+                    "time": 1669800363,
+                    "temp": 22.48,
+                    "humid": 80.85
+                },
+                {
+                    "time": 1669800663,
+                    "temp": 31.7,
+                    "humid": 80.14
+                },
+                {
+                    "time": 1669800963,
+                    "temp": 25.48,
+                    "humid": 63.44
+                },
+                {
+                    "time": 1669801263,
+                    "temp": 25.3,
+                    "humid": 65.85
+                },
+                {
+                    "time": 1669801563,
+                    "temp": 18.23,
+                    "humid": 88.17
+                },
+                {
+                    "time": 1669801863,
+                    "temp": 29.84,
+                    "humid": 72.43
+                },
+                {
+                    "time": 1669802163,
+                    "temp": 22.5,
+                    "humid": 87.1
+                },
+                {
+                    "time": 1669802463,
+                    "temp": 29.75,
+                    "humid": 65.34
+                },
+                {
+                    "time": 1669802763,
+                    "temp": 27.89,
+                    "humid": 72.87
+                },
+                {
+                    "time": 1669803063,
+                    "temp": 10.99,
+                    "humid": 79.68
+                },
+                {
+                    "time": 1669803363,
+                    "temp": 30.02,
+                    "humid": 82.85
+                },
+                {
+                    "time": 1669803663,
+                    "temp": 12.12,
+                    "humid": 75.75
+                },
+                {
+                    "time": 1669803963,
+                    "temp": 13.74,
+                    "humid": 78.65
+                },
+                {
+                    "time": 1669804263,
+                    "temp": 23.77,
+                    "humid": 78.79
+                },
+                {
+                    "time": 1669804563,
+                    "temp": 12.54,
+                    "humid": 77.91
+                },
+                {
+                    "time": 1669804863,
+                    "temp": 30.4,
+                    "humid": 77.26
+                },
+                {
+                    "time": 1669805163,
+                    "temp": 18.68,
+                    "humid": 67.16
+                },
+                {
+                    "time": 1669805463,
+                    "temp": 28.07,
+                    "humid": 84.96
+                },
+                {
+                    "time": 1669805763,
+                    "temp": 28.57,
+                    "humid": 82.98
+                },
+                {
+                    "time": 1669806063,
+                    "temp": 19.79,
+                    "humid": 62.06
+                },
+                {
+                    "time": 1669806363,
+                    "temp": 13.15,
+                    "humid": 78
+                },
+                {
+                    "time": 1669806663,
+                    "temp": 11.01,
+                    "humid": 77.39
+                },
+                {
+                    "time": 1669806963,
+                    "temp": 14.53,
+                    "humid": 71.55
+                },
+                {
+                    "time": 1669807263,
+                    "temp": 25.31,
+                    "humid": 85.65
+                },
+                {
+                    "time": 1669807563,
+                    "temp": 27.67,
+                    "humid": 71.72
+                },
+                {
+                    "time": 1669807863,
+                    "temp": 22.58,
+                    "humid": 82.41
+                },
+                {
+                    "time": 1669808163,
+                    "temp": 14.33,
+                    "humid": 74.58
+                },
+                {
+                    "time": 1669808463,
+                    "temp": 29.93,
+                    "humid": 88.01
+                },
+                {
+                    "time": 1669808763,
+                    "temp": 20.56,
+                    "humid": 67.28
+                },
+                {
+                    "time": 1669809063,
+                    "temp": 22.64,
+                    "humid": 60.57
+                },
+                {
+                    "time": 1669809363,
+                    "temp": 28.37,
+                    "humid": 85.15
+                },
+                {
+                    "time": 1669809663,
+                    "temp": 14.53,
+                    "humid": 65.97
+                },
+                {
+                    "time": 1669809963,
+                    "temp": 17.45,
+                    "humid": 87.49
+                },
+                {
+                    "time": 1669810263,
+                    "temp": 11.31,
+                    "humid": 88.87
+                },
+                {
+                    "time": 1669810563,
+                    "temp": 24.2,
+                    "humid": 87.42
+                },
+                {
+                    "time": 1669810863,
+                    "temp": 30,
+                    "humid": 73.87
+                },
+                {
+                    "time": 1669811163,
+                    "temp": 27.17,
+                    "humid": 89.88
+                },
+                {
+                    "time": 1669811463,
+                    "temp": 25.99,
+                    "humid": 64.25
+                },
+                {
+                    "time": 1669811763,
+                    "temp": 10.43,
+                    "humid": 80.19
+                },
+                {
+                    "time": 1669812063,
+                    "temp": 10.79,
+                    "humid": 76.24
+                },
+                {
+                    "time": 1669812363,
+                    "temp": 11.38,
+                    "humid": 81.28
+                },
+                {
+                    "time": 1669812663,
+                    "temp": 22.63,
+                    "humid": 76.12
+                },
+                {
+                    "time": 1669812963,
+                    "temp": 26.96,
+                    "humid": 69.33
+                },
+                {
+                    "time": 1669813263,
+                    "temp": 17.53,
+                    "humid": 61.2
+                },
+                {
+                    "time": 1669813563,
+                    "temp": 25.01,
+                    "humid": 66.07
+                },
+                {
+                    "time": 1669813863,
+                    "temp": 13.34,
+                    "humid": 62.86
+                },
+                {
+                    "time": 1669814163,
+                    "temp": 10.63,
+                    "humid": 80.58
+                },
+                {
+                    "time": 1669814463,
+                    "temp": 26.49,
+                    "humid": 79.08
+                },
+                {
+                    "time": 1669814763,
+                    "temp": 26.18,
+                    "humid": 76.07
+                },
+                {
+                    "time": 1669815063,
+                    "temp": 14.33,
+                    "humid": 66.3
+                },
+                {
+                    "time": 1669815363,
+                    "temp": 18.26,
+                    "humid": 62.7
+                },
+                {
+                    "time": 1669815663,
+                    "temp": 15.59,
+                    "humid": 74.63
+                },
+                {
+                    "time": 1669815963,
+                    "temp": 30.24,
+                    "humid": 83.24
+                },
+                {
+                    "time": 1669816263,
+                    "temp": 11.96,
+                    "humid": 73.75
+                },
+                {
+                    "time": 1669816563,
+                    "temp": 30.97,
+                    "humid": 80.28
+                },
+                {
+                    "time": 1669816863,
+                    "temp": 15.34,
+                    "humid": 69
+                },
+                {
+                    "time": 1669817163,
+                    "temp": 25.9,
+                    "humid": 83.8
+                },
+                {
+                    "time": 1669817463,
+                    "temp": 23.19,
+                    "humid": 80.36
+                },
+                {
+                    "time": 1669817763,
+                    "temp": 16.2,
+                    "humid": 85.65
+                },
+                {
+                    "time": 1669818063,
+                    "temp": 15.68,
+                    "humid": 87.84
+                },
+                {
+                    "time": 1669818363,
+                    "temp": 22.31,
+                    "humid": 64.7
+                },
+                {
+                    "time": 1669818663,
+                    "temp": 11.45,
+                    "humid": 70.15
+                },
+                {
+                    "time": 1669818963,
+                    "temp": 25.62,
+                    "humid": 71.56
+                },
+                {
+                    "time": 1669819263,
+                    "temp": 17.55,
+                    "humid": 81.69
+                },
+                {
+                    "time": 1669819563,
+                    "temp": 22.79,
+                    "humid": 72.24
+                },
+                {
+                    "time": 1669819863,
+                    "temp": 24.51,
+                    "humid": 62.85
+                },
+                {
+                    "time": 1669820163,
+                    "temp": 10.68,
+                    "humid": 76.44
+                },
+                {
+                    "time": 1669820463,
+                    "temp": 21.18,
+                    "humid": 70.34
+                },
+                {
+                    "time": 1669820763,
+                    "temp": 26.19,
+                    "humid": 75.91
+                },
+                {
+                    "time": 1669821063,
+                    "temp": 28.87,
+                    "humid": 63.41
+                },
+                {
+                    "time": 1669821363,
+                    "temp": 12.52,
+                    "humid": 71.19
+                },
+                {
+                    "time": 1669821663,
+                    "temp": 11.16,
+                    "humid": 75.72
+                },
+                {
+                    "time": 1669821963,
+                    "temp": 23.14,
+                    "humid": 72.3
+                },
+                {
+                    "time": 1669822263,
+                    "temp": 31.17,
+                    "humid": 88.09
+                },
+                {
+                    "time": 1669822563,
+                    "temp": 25.9,
+                    "humid": 66.21
+                },
+                {
+                    "time": 1669822863,
+                    "temp": 18.13,
+                    "humid": 74.02
+                },
+                {
+                    "time": 1669823163,
+                    "temp": 13.42,
+                    "humid": 83.58
+                },
+                {
+                    "time": 1669823463,
+                    "temp": 20.72,
+                    "humid": 74.62
+                },
+                {
+                    "time": 1669823763,
+                    "temp": 22.55,
+                    "humid": 62.15
+                },
+                {
+                    "time": 1669824063,
+                    "temp": 10.57,
+                    "humid": 70.71
+                },
+                {
+                    "time": 1669824363,
+                    "temp": 17.35,
+                    "humid": 61.6
+                },
+                {
+                    "time": 1669824663,
+                    "temp": 27.2,
+                    "humid": 60.95
+                },
+                {
+                    "time": 1669824963,
+                    "temp": 12.15,
+                    "humid": 80.75
+                },
+                {
+                    "time": 1669825263,
+                    "temp": 15.65,
+                    "humid": 63.73
+                },
+                {
+                    "time": 1669825563,
+                    "temp": 31.37,
+                    "humid": 80.55
+                },
+                {
+                    "time": 1669825863,
+                    "temp": 18.75,
+                    "humid": 80.89
+                },
+                {
+                    "time": 1669826163,
+                    "temp": 25.11,
+                    "humid": 72.8
+                },
+                {
+                    "time": 1669826463,
+                    "temp": 30.15,
+                    "humid": 67
+                },
+                {
+                    "time": 1669826763,
+                    "temp": 21.97,
+                    "humid": 85.79
+                },
+                {
+                    "time": 1669827063,
+                    "temp": 20.95,
+                    "humid": 74.49
+                },
+                {
+                    "time": 1669827363,
+                    "temp": 26.69,
+                    "humid": 85.36
+                },
+                {
+                    "time": 1669827663,
+                    "temp": 12.43,
+                    "humid": 83.95
+                },
+                {
+                    "time": 1669827963,
+                    "temp": 12.32,
+                    "humid": 69.67
+                },
+                {
+                    "time": 1669828263,
+                    "temp": 14.42,
+                    "humid": 73.38
+                },
+                {
+                    "time": 1669828563,
+                    "temp": 26.3,
+                    "humid": 67.14
+                },
+                {
+                    "time": 1669828863,
+                    "temp": 18.88,
+                    "humid": 76.73
+                },
+                {
+                    "time": 1669829163,
+                    "temp": 10.62,
+                    "humid": 79.35
+                },
+                {
+                    "time": 1669829463,
+                    "temp": 30.93,
+                    "humid": 69.25
+                },
+                {
+                    "time": 1669829763,
+                    "temp": 12.73,
+                    "humid": 70.71
+                },
+                {
+                    "time": 1669830063,
+                    "temp": 31.67,
+                    "humid": 69.91
+                },
+                {
+                    "time": 1669830363,
+                    "temp": 19.34,
+                    "humid": 64.11
+                },
+                {
+                    "time": 1669830663,
+                    "temp": 30.71,
+                    "humid": 64.8
+                },
+                {
+                    "time": 1669830963,
+                    "temp": 25.02,
+                    "humid": 88
+                },
+                {
+                    "time": 1669831263,
+                    "temp": 30.51,
+                    "humid": 75.49
+                },
+                {
+                    "time": 1669831563,
+                    "temp": 15.39,
+                    "humid": 60.35
+                }
+            ]
+        }
+    ],
+    "params": [
+        {
+            "plant": "Tomate",
+            "min_temp": 21,
+            "max_temp": 30,
+            "min_humid": 65,
+            "max_humid": 90,
+            "desc": "O tomate-cereja adora ambientes ensolarados. Eles precisam de um clima livre de geadas e pelo menos seis horas de sol por dia. Deixá-los em um local, abrigado e bem ventilado reduz o risco de fungo nas folhas."
+        },
+        {
+            "plant": "Manjericão",
+            "min_temp": 10,
+            "max_temp": 32,
+            "min_humid": 60,
+            "max_humid": 90,
+            "desc": "O local para plantio deve receber pelo menos quatro horas diárias de sol, pois o manjericão se dá muito bem com esta luz natural. Regas não são necessárias diariamente, pois o excesso de água pode encerrar a vida de nosso querido manjericão. Sendo assim, devem ser efetuadas a cada dois ou três dias, ou então, quando a terra da parte superior estiver seca."
+        },
+        {
+            "plant": "Tomilho",
+            "min_temp": 20,
+            "max_temp": 30,
+            "min_humid": 40,
+            "max_humid": 60,
+            "desc": "Mantenha o vaso em local ensolarado e fresco. Regue a planta sempre que notar a terra seca, com mais frequência nas primeiras semanas após o plantio, mas tomando cuidado para evitar o encharcamento, já que o tomilho prefere solo seco."
+        },
+        {
+            "plant": "Coentro",
+            "min_temp": 10,
+            "max_temp": 30,
+            "min_humid": 50,
+            "max_humid": 90,
+            "desc": "Você sempre deverá checar o solo antes de regar o coentro. O ideal é que a terra nunca fique úmida ou encharcada demais. Ofereça água sempre que perceber a terra seca. Quando as plantas estiverem bem desenvolvidas, diminua a frequência de rega."
+        },
+        {
+            "plant": "Hortelã",
+            "min_temp": 13,
+            "max_temp": 30,
+            "min_humid": 90,
+            "max_humid": 100,
+            "desc": "Após o plantio, molhe à terra para que a umidade chegue às raízes da hortelã. À terra deve sempre permanecer úmida, mas não encharcada. Se o clima estiver quente, você pode regar a planta várias vezes por dia. Deixe o vaso voltado para o leste, pois a hortelã se desenvolve melhor com seis ou mais horas de luz solar."
+        },
+        {
+            "plant": "Alface",
+            "min_temp": 15,
+            "max_temp": 26,
+            "min_humid": 50,
+            "max_humid": 70,
+            "desc": "Coloque sua alface em um local arejado: a circulação de ar favorece o crescimento e plantio das alfaces. Então lugares que pegam bastante vento são ideais para que essa hortaliça cresça com qualidade. Regue em dias alternados: é imprescindível que a terra esteja bem úmida, mas nunca encharcada."
+        },
+        {
+            "plant": "Alecrim",
+            "min_temp": 20,
+            "max_temp": 30,
+            "min_humid": 45,
+            "max_humid": 60,
+            "desc": "O alecrim se adapta a qualquer tipo de solo, mas prefere os secos, arenosos e bem drenados. Quanto a localização, é muito importante lembrar que para o cultivo ocorrer de forma correta, o local em que ele será plantado deve receber luz solar de uma forma que o atinja diretamente, por, pelo menos, 5 horas diárias."
+        },
+        {
+            "plant": "Salsa",
+            "min_temp": 10,
+            "max_temp": 24,
+            "min_humid": 70,
+            "max_humid": 95,
+            "desc": "Gosta de solos com textura areno-argilosa, rico em matéria orgânica, bem drenados e ligeiramente ácidos, com pH 5,5-6,7. A salsa precisa de quatro horas de sol por dia, pelo menos, e você deve deixar a terra sempre úmida, fazendo regas diárias. Para colher, é só cortar o galho inteiro, deixando um dedo do solo."
+        }
+    ]
+}

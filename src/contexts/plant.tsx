@@ -10,36 +10,57 @@ interface Plant {
 }
 interface IPlantContext {
     plantParams?: Plant[],
-    plant1?: Plant,
-    setPlant1?: any,
-    plant2?: Plant,
-    setPlant2?: any,
+    selectedPlants: { [k: string]: Plant };
+    setSelectedPlant: any;
 }
-const PlantContext = createContext<IPlantContext>({});
+
+const PlantContext = createContext<IPlantContext>({
+    selectedPlants: {
+        plant1: {},
+        plant2: {}
+    },
+    setSelectedPlant: () => {}
+});
 
 export const PlantProvider = ({ children }: {children:any}) => {
 
-    const [plantParams, setPlantParams] = useState([]);
-    const [plant1, setPlant1] = useState({});
-    const [plant2, setPlant2] = useState({});
+    const [plantParams, setPlantParams] = useState<Plant[]>([]);
+    const [selectedPlants, setSelectedPlants] = useState({});
+    // const [plant1, setPlant1] = useState({});
+    // const [plant2, setPlant2] = useState({});
+    const setSelectedPlant = (plantNum: "plant1" | "plant2", plantName: string) => {
+        // console.log({
+        //     [plantNum]: plantParams.find(param => param.plant === plantName)
+        // })
+        setSelectedPlants((s: any) => ({
+            ...s,
+            [plantNum]: plantParams.find(param => param.plant === plantName)
+        }))
+    }
 
     useEffect(() => {
         (async () => {
             const { data } = await axios.get('/params');
             setPlantParams(data);
-            setPlant1(data[0]);
-            setPlant2(data[1]);
+            setSelectedPlants({
+                plant1: data[0],
+                plant2: data[1]
+            })
+            // setPlant1(data[0]);
+            // setPlant2(data[1]);
         })();
     }, []);
 
-    console.log(plant1,plant2,plantParams)
+    // console.log(plant1,plant2,plantParams)
     return (
         <PlantContext.Provider value={{ 
             plantParams,
-            plant1,
-            setPlant1,
-            plant2,
-            setPlant2
+            selectedPlants,
+            setSelectedPlant
+            // plant1,
+            // setPlant1,
+            // plant2,
+            // setPlant2
         }}>
         {children}
         </PlantContext.Provider>

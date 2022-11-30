@@ -7,26 +7,30 @@ import {
   Button,
   Modal,
   Text,
+  Flex, 
+  Spacer 
 } from "@chakra-ui/react";
 import { usePlant } from '../../../contexts/plant';
 
 const SelectPlantModal = (props: { isOpen: boolean; onClose: () => any }) => {
 
-  const { plantParams } = usePlant();
+  const { plantParams, setSelectedPlant, selectedPlants } = usePlant();
 
-  const styles = {
-    backgroundColor: 'white',
-    color: 'black',
+  const contentStyles = {
+    backgroundColor: '#464646',
+    color: 'rgba(255, 255, 255, 0.87)',
     width: '80vw',
     margin: 'auto auto',
-    height: '50vh'
+    height: '50vh',
+    borderRadius: 10
   };
   const headerStyles = {
     fontSize: '2rem'
   };
   const bodyStyles = {
     height: '100%',
-    p: 15
+    p: 15,
+    display: "flex",
   };
   const footerStyles = {
     padding: 10,
@@ -34,23 +38,42 @@ const SelectPlantModal = (props: { isOpen: boolean; onClose: () => any }) => {
     justifyContent: 'end',
   };
 
-  const onChangeSelect = (e: any) => {
-    console.log(e.target.value);
+  const onChangeSelect1 = (e: any) => {
+    setSelectedPlant("plant1", e.target.value);
+  }
+
+  const onChangeSelect2 = (e: any) => {
+    setSelectedPlant("plant2",e.target.value);
   }
 
   return (
     <Modal isOpen={props.isOpen} onClose={props.onClose}>
-      <ModalContent {...styles}>
+      <ModalContent {...contentStyles}>
         <ModalHeader {...headerStyles} p={10}>Selecionar plantas</ModalHeader>
         <ModalBody {...bodyStyles}>
-          <select onChange={onChangeSelect}>
-            {plantParams!.map((plant,idx) => (
-              <option key={plant.plant || idx}>
-                {plant.plant}
-              </option>
-            ))}
-
-          </select>
+          <Spacer/>
+          <Flex direction="column">
+            <h3>Selecione a planta 1</h3>
+            <select onChange={onChangeSelect1} value={selectedPlants.plant1.plant}>
+              {plantParams!.map((plant,idx) => (
+                <option key={plant.plant || idx}>
+                  {plant.plant}
+                </option>
+              ))}
+            </select>
+          </Flex>
+          <Spacer/>
+          <Flex direction="column">
+            <h3>Selecione a planta 2</h3>
+            <select onChange={onChangeSelect2} value={selectedPlants.plant2.plant}>
+              {plantParams!.map((plant,idx) => (
+                <option key={plant.plant || idx} value={plant.plant}>
+                  {plant.plant}
+                </option>
+              ))}
+            </select>
+          </Flex>
+          <Spacer/>
         </ModalBody>
 
         <ModalFooter {...footerStyles}>
@@ -63,7 +86,6 @@ const SelectPlantModal = (props: { isOpen: boolean; onClose: () => any }) => {
           >
             Close
           </Button>
-          {/* <Button variant="ghost">Secondary Action</Button> */}
         </ModalFooter>
       </ModalContent>
     </Modal>

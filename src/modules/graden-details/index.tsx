@@ -14,7 +14,7 @@ function GardenDetails(input: { plantName: string }) {
     current,
     isLoading: isLoadingDetails,
   } = useGardenDetails(input.plantName);
-  const { plantParams } = usePlant();
+  const { selectedPlants } = usePlant();
   // const { gardenParams, isLoading: isLoadingParams } = useGardenParams(
   //   input.plantName
   // );
@@ -28,24 +28,24 @@ function GardenDetails(input: { plantName: string }) {
       {gardenData ? (
         <GridItem colSpan={3}>
           <VStack textAlign="center">
-            <Heading fontSize="30px">{gardenData.name}</Heading>
+            <Heading fontSize="30px">{selectedPlants[input.plantName].plant}</Heading>
             <HStack>
               <Box>
                 <VStack>
                   <TemperatureChart
                     value={(current?.temp || 0) / 100}
-                    max={plantParams.max_temp}
-                    min={plantParams.min_temp}
+                    max={selectedPlants[input.plantName].max_temp!}
+                    min={selectedPlants[input.plantName].min_temp!}
                   />
                   <MoistureChart
                     value={(current?.humid || 0) / 100}
-                    max={gardenParams.max_humid}
-                    min={gardenParams.min_humid}
+                    max={selectedPlants[input.plantName].max_humid!}
+                    min={selectedPlants[input.plantName].min_humid!}
                   />
                 </VStack>
               </Box>
               <Box w={"240px"}>
-                <Text textAlign={"justify"}>{gardenParams.desc}</Text>
+                <Text textAlign={"justify"}>{selectedPlants[input.plantName].desc}</Text>
               </Box>
             </HStack>
             <MultiLineChart data={gardenData.history} />
