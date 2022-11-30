@@ -21,7 +21,7 @@ const useGardenDetails = (plantName: string) => {
       });
 
       if (!result) {
-        throw new Error(`Plant not found with name ${plantName}}`);
+        throw new Error(`Plant with name ${plantName} not found`);
       }
 
       // console.log(result.data)

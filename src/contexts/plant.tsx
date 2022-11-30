@@ -23,7 +23,6 @@ export const PlantProvider = ({ children }: {children:any}) => {
     const [plant1, setPlant1] = useState({});
     const [plant2, setPlant2] = useState({});
 
-
     useEffect(() => {
         (async () => {
             const { data } = await axios.get('/params');
@@ -32,6 +31,8 @@ export const PlantProvider = ({ children }: {children:any}) => {
             setPlant2(data[1]);
         })();
     }, []);
+
+    console.log(plant1,plant2,plantParams)
     return (
         <PlantContext.Provider value={{ 
             plantParams,

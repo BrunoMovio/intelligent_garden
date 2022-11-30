@@ -34,15 +34,19 @@ const SelectPlantModal = (props: { isOpen: boolean; onClose: () => any }) => {
     justifyContent: 'end',
   };
 
+  const onChangeSelect = (e: any) => {
+    console.log(e.target.value);
+  }
+
   return (
     <Modal isOpen={props.isOpen} onClose={props.onClose}>
       <ModalContent {...styles}>
-        <ModalHeader {...headerStyles} p={10}>Selecionar planta</ModalHeader>
+        <ModalHeader {...headerStyles} p={10}>Selecionar plantas</ModalHeader>
         <ModalBody {...bodyStyles}>
-          <select>
-            {plantParams!.map(({plant}) => (
-              <option >
-                {plant}
+          <select onChange={onChangeSelect}>
+            {plantParams!.map((plant,idx) => (
+              <option key={plant.plant || idx}>
+                {plant.plant}
               </option>
             ))}
 
