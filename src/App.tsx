@@ -1,10 +1,10 @@
 import { Grid, Heading } from "@chakra-ui/react";
 import Banner from "./modules/banner/banner";
 import GardenDetails from "./modules/graden-details";
-import { plant1, plant2 } from "./contants";
 import { useEffect, useState } from "react";
 import axios from "./api/axios";
 import Header from "./modules/header";
+import useSimulateDB from "./modules/mock/simulate-details.uc";
 
 interface User {
   name: string;
@@ -14,6 +14,7 @@ interface User {
 function App() {
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const { create } = useSimulateDB();
 
   useEffect(() => {
     async function getUser() {
@@ -31,6 +32,13 @@ function App() {
     }
 
     getUser();
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      create();
+    }, 60000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
