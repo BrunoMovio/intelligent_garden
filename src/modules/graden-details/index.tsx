@@ -5,7 +5,8 @@ import TemperatureChart from "./components/temperature-chart";
 import MoistureChart from "./components/moisture-chart";
 import useGardenDetails from "./garden-details.uc";
 import { PageHeading } from "../../commom/components/typography/page-heading.component";
-import useGardenParams from "./garden-params.uc";
+// import useGardenParams from "./garden-params.uc";
+import { usePlant } from '../../contexts/plant';
 
 function GardenDetails(input: { plantName: string }) {
   const {
@@ -13,13 +14,15 @@ function GardenDetails(input: { plantName: string }) {
     current,
     isLoading: isLoadingDetails,
   } = useGardenDetails(input.plantName);
-  const { gardenParams, isLoading: isLoadingParams } = useGardenParams(
-    input.plantName
-  );
+  const { plantParams } = usePlant();
+  // const { gardenParams, isLoading: isLoadingParams } = useGardenParams(
+  //   input.plantName
+  // );
 
-  if (!gardenData || !gardenParams || isLoadingDetails || isLoadingParams)
+  if (!gardenData || isLoadingDetails)
     return <Spinner />;
 
+    console.log({gardenData})
   return (
     <>
       {gardenData ? (
@@ -31,8 +34,8 @@ function GardenDetails(input: { plantName: string }) {
                 <VStack>
                   <TemperatureChart
                     value={(current?.temp || 0) / 100}
-                    max={gardenParams.max_temp}
-                    min={gardenParams.min_temp}
+                    max={plantParams.max_temp}
+                    min={plantParams.min_temp}
                   />
                   <MoistureChart
                     value={(current?.humid || 0) / 100}

@@ -16,7 +16,7 @@ const useGardenDetails = (plantName: string) => {
 
   useEffect(() => {
     async function getGardenDetails() {
-      const result = await axios.get("/data", {
+      const result = await axios.get(`/data/${plantName}`, {
         headers: { "Content-Type": "application/json" },
       });
 
@@ -24,13 +24,14 @@ const useGardenDetails = (plantName: string) => {
         throw new Error(`Plant not found with name ${plantName}}`);
       }
 
+      // console.log(result.data)
       setGardenData(
-        result.data.find((plant: GardenDetails) => plant.name === plantName)
+        result.data
       );
     }
 
     setIsLoading(true);
-    getGardenDetails().then(() => setIsLoading(false));
+    getGardenDetails().then(() => setIsLoading(false)).catch(err => console.log(err));
   }, [plantName]);
 
   return {

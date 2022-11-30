@@ -5,7 +5,8 @@
   },
   "data": [
     {
-      "name": "Tomate",
+      "id": "plant1",
+      "name": "plant1",
       "history": [
         {
           "time": "07h",
@@ -60,7 +61,8 @@
       ]
     },
     {
-      "name": "Alecrim",
+      "id": "plant2",
+      "name": "plant2",
       "history": [
         {
           "time": "05h",
@@ -111,61 +113,6 @@
           "time": "14h",
           "temp": 34.90,
           "humid": 43.00
-        }
-      ]
-    },
-    {
-      "name": "Manjericão",
-      "history": [
-        {
-          "time": "07h",
-          "temp": 34.90,
-          "humid": 43.00
-        },
-        {
-          "time": "08h",
-          "temp": 18.90,
-          "humid": 48.00
-        },
-        {
-          "time": "09h",
-          "temp": 23.90,
-          "humid": 38.00
-        },
-        {
-          "time": "10h",
-          "temp": 27.80,
-          "humid": 39.08
-        },
-        {
-          "time": "11h",
-          "temp": 40.00,
-          "humid": 24.00
-        },
-        {
-          "time": "12h",
-          "temp": 18.90,
-          "humid": 48.00
-        },
-        {
-          "time": "13h",
-          "temp": 20.00,
-          "humid": 98.00
-        },
-        {
-          "time": "14h",
-          "temp": 27.80,
-          "humid": 39.08
-        },
-        {
-          "time": "15h",
-          "temp": 40.00,
-          "humid": 24.00
-        },
-        {
-          "time": "16h",
-          "temp": 13.00,
-          "humid": 98.00
         }
       ]
     }

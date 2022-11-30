@@ -48,8 +48,8 @@ function App() {
         <>
           <Header name={user.name} />
           <Banner />
-          <GardenDetails plantName={user.plants[0]} />
-          <GardenDetails plantName={user.plants[1]} />
+          <GardenDetails plantName={"plant1"} />
+          <GardenDetails plantName={"plant2"} />
         </>
       )}
     </Grid>
