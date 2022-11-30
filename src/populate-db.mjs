@@ -96,7 +96,7 @@ function getRandomFloat(min, max) {
 const plantsData = plantsParams.map((plantParam, index) => {
   const plantDetail = {
     "id": `plant${index+1}`,
-    "name": `plant${index+1}`,
+    "name": plantParam.plant,
     "history": [],
   };
   let currentStepTime = startTime;
@@ -120,9 +120,10 @@ const plantsData = plantsParams.map((plantParam, index) => {
   return plantDetail;
 });
 
+
 const result = {
   user: userParams,
-  data: plantsData.filter((data) => userParams.plants.includes(data.id) ),
+  data: plantsData.filter((data) => userParams.plants.includes(data.name) ),
   params: plantsParams,
 }
 
