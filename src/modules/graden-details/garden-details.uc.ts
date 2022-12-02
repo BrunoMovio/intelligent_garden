@@ -3,41 +3,52 @@ import axios from "../../api/axios";
 
 export interface GardenDetails {
   name: string;
-  history: {
-    time: string;
-    temp: number;
-    humid: number;
-  }[];
+  history: PlantHistoryDetail[];
 }
 
-const useGardenDetails = (plantName: string) => {
+export interface PlantHistoryDetail {
+  time: string;
+  temp: number;
+  humid: number;
+}
+
+const useGardenDetails = (plantId: string) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [gardenData, setGardenData] = useState<GardenDetails | null>(null);
 
-  useEffect(() => {
-    async function getGardenDetails() {
-      const result = await axios.get(`/data/${plantName}`, {
-        headers: { "Content-Type": "application/json" },
-      });
+  async function getGardenDetails() {
+    const result = await axios.get(`/data/${plantId}`, {
+      headers: { "Content-Type": "application/json" },
+    });
 
-      if (!result) {
-        throw new Error(`Plant with name ${plantName} not found`);
-      }
+    console.log("result", result);
 
-      // console.log(result.data)
-      setGardenData(
-        result.data
-      );
+    if (!result) {
+      throw new Error(`Plant with name ${plantId} not found`);
     }
 
+    setGardenData(result.data);
+  }
+
+  function invalidate() {
     setIsLoading(true);
-    getGardenDetails().then(() => setIsLoading(false)).catch(err => console.log(err));
-  }, [plantName]);
+    getGardenDetails()
+      .then(() => setIsLoading(false))
+      .catch((err) => console.log(err));
+  }
+
+  useEffect(() => {
+    setIsLoading(true);
+    getGardenDetails()
+      .then(() => setIsLoading(false))
+      .catch((err) => console.log(err));
+  }, [plantId]);
 
   return {
     gardenData,
     current:
       gardenData?.history && gardenData.history[gardenData.history.length - 1],
+    invalidate,
     isLoading,
   };
 };

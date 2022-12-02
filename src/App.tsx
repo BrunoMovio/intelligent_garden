@@ -4,7 +4,7 @@ import GardenDetails from "./modules/graden-details";
 import { useEffect, useState } from "react";
 import axios from "./api/axios";
 import Header from "./modules/header";
-import useSimulateDB from "./modules/mock/simulate-details.uc";
+import useCreateGardenDetails from "./modules/mock/create-garden-details.uc";
 
 interface User {
   name: string;
@@ -14,7 +14,7 @@ interface User {
 function App() {
   const [user, setUser] = useState<User | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const { create } = useSimulateDB();
+  const { create } = useCreateGardenDetails();
 
   useEffect(() => {
     async function getUser() {
@@ -36,8 +36,9 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
+      console.log("chamou");
       create();
-    }, 60000);
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -47,7 +48,7 @@ function App() {
       templateRows="1fr 1fr 3fr"
       gap={8}
       p={8}
-      w="99vw"
+      w="97vw"
       h="98vh"
     >
       {error || !user ? (

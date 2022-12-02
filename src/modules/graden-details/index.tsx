@@ -5,8 +5,7 @@ import TemperatureChart from "./components/temperature-chart";
 import MoistureChart from "./components/moisture-chart";
 import useGardenDetails from "./garden-details.uc";
 import { PageHeading } from "../../commom/components/typography/page-heading.component";
-// import useGardenParams from "./garden-params.uc";
-import { usePlant } from '../../contexts/plant';
+import { usePlant } from "../../contexts/plant";
 
 function GardenDetails(input: { plantName: string }) {
   const {
@@ -15,20 +14,23 @@ function GardenDetails(input: { plantName: string }) {
     isLoading: isLoadingDetails,
   } = useGardenDetails(input.plantName);
   const { selectedPlants } = usePlant();
-  // const { gardenParams, isLoading: isLoadingParams } = useGardenParams(
-  //   input.plantName
-  // );
 
-  if (!gardenData || isLoadingDetails)
-    return <Spinner />;
+  if (!gardenData || !gardenData.history || isLoadingDetails)
+    return (
+      <VStack justifyContent={"space-evenly"} w={"44vw"}>
+        <Spinner w={"40px"} h={"40px"} />
+        <Spinner w={"40px"} h={"40px"} />
+      </VStack>
+    );
 
-    console.log({gardenData})
   return (
     <>
       {gardenData ? (
         <GridItem colSpan={3}>
           <VStack textAlign="center">
-            <Heading fontSize="30px">{selectedPlants[input.plantName].plant}</Heading>
+            <Heading fontSize="30px">
+              {selectedPlants[input.plantName].plant}
+            </Heading>
             <HStack>
               <Box>
                 <VStack>
@@ -45,7 +47,25 @@ function GardenDetails(input: { plantName: string }) {
                 </VStack>
               </Box>
               <Box w={"240px"}>
-                <Text textAlign={"justify"}>{selectedPlants[input.plantName].desc}</Text>
+                <Text textAlign={"justify"}>
+                  {selectedPlants[input.plantName].desc}
+                </Text>
+                <Text textAlign={"center"}>
+                  Temperatura <strong>mínima</strong> -{" "}
+                  {selectedPlants[input.plantName].min_temp} °C
+                </Text>
+                <Text textAlign={"center"}>
+                  Temperatura <strong>máxima</strong> -{" "}
+                  {selectedPlants[input.plantName].max_temp} °C
+                </Text>
+                <Text textAlign={"center"}>
+                  Umidade <strong>mínima</strong> -{" "}
+                  {selectedPlants[input.plantName].min_humid} %
+                </Text>
+                <Text textAlign={"center"}>
+                  Umidade <strong>máxima</strong> -{" "}
+                  {selectedPlants[input.plantName].max_humid} %
+                </Text>
               </Box>
             </HStack>
             <MultiLineChart data={gardenData.history} />

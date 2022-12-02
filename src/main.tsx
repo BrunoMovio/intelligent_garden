@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import { PlantProvider } from './contexts/plant';
+import { PlantProvider } from "./contexts/plant";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container!);
+
+root.render(
   <React.StrictMode>
     <PlantProvider>
-    <App />
+      <App />
     </PlantProvider>
   </React.StrictMode>
 );

@@ -1,4 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
+import dayjs from "dayjs";
 import {
   LineChart,
   Line,
@@ -16,9 +17,10 @@ export interface LineChartProps {
 }
 
 function MultiLineChart(props: { data: LineChartProps[] }) {
+  console.log("props", props);
   const mappedHistory = props.data.map((data) => {
     return {
-      name: data.time,
+      name: `${dayjs(new Date(Number(data.time) * 1000)).format("hh:mm")} `,
       temperatura: data.temp,
       umidade: data.humid,
     };
@@ -38,15 +40,10 @@ function MultiLineChart(props: { data: LineChartProps[] }) {
           type="monotone"
           dataKey="temperatura"
           stroke="#8884d8"
-          activeDot={{ r: 8 }}
+          dot={false}
         />
-        <Line
-          type="monotone"
-          dataKey="umidade"
-          stroke="#82ca9d"
-          activeDot={{ r: 8 }}
-        />
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+        <Line type="monotone" dataKey="umidade" stroke="#82ca9d" dot={false} />
+        <CartesianGrid stroke="#eee" strokeDasharray="3 2" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
